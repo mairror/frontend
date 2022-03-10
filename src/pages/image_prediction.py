@@ -27,8 +27,9 @@ def app():
     if st.button("Predict") and image:
         spinner()
         prediction = predict("raw/" + image_name)
-        st.text("The prediction was....")
-        st.json(prediction)
+        if prediction:
+            st.text("The prediction was....")
+            st.json(prediction)
 
 
 def spinner():
