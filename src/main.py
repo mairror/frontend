@@ -1,11 +1,10 @@
 import streamlit as st
 from multiapp.page_selection import MultiApp
-from pages import home, image_prediction, about
-
-
+from pages import about, home, image_prediction
 
 st.set_page_config(
     layout="wide",
+    page_title="Mairror",
     menu_items={
         "Get Help": "https://github.com/mairror/mairror/blob/main/README.md",
         "Report a bug": "https://github.com/mairror/frontend/issues",
